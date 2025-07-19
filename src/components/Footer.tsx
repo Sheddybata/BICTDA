@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Globe } from 'lucide-react';
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Globe, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -63,11 +63,11 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-bictda-accent" />
-                <span className="text-bictda-light text-sm">+234 806 052 3314</span>
+                <span className="text-bictda-light text-sm">08067261763</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-bictda-accent" />
-                <span className="text-bictda-light text-sm">contact@bictda.bo.gov.ng</span>
+                <span className="text-bictda-light text-sm">Info@bictda.bo.gov.ng</span>
               </div>
             </div>
           </div>
@@ -81,17 +81,42 @@ const Footer: React.FC = () => {
             © 2025 BICTDA - Borno State Government. All rights reserved.
           </div>
           <div className="flex space-x-4">
-            {[Facebook, Twitter, Linkedin, Globe].map((Icon, index) => (
-              <a
-                key={index}
-                href="#"
-                className="backdrop-blur-xl bg-white/10 border border-bictda-accent/20 rounded-full shadow-lg flex items-center justify-center w-12 h-12 transition-all duration-300 hover:scale-110 hover:shadow-[0_0_16px_4px_rgba(34,197,94,0.25)] group"
-                style={{ WebkitBackdropFilter: 'blur(8px)' }}
-                aria-label="Social Media"
-              >
-                <Icon className="w-6 h-6 text-white group-hover:text-white transition-colors duration-300" />
-              </a>
-            ))}
+            <a
+              href="https://www.facebook.com/bictda"
+              className="backdrop-blur-xl bg-white/10 border border-bictda-accent/20 rounded-full shadow-lg flex items-center justify-center w-12 h-12 transition-all duration-300 hover:scale-110 hover:shadow-[0_0_16px_4px_rgba(34,197,94,0.25)] group"
+              style={{ WebkitBackdropFilter: 'blur(8px)' }}
+              aria-label="Facebook"
+              target="_blank" rel="noopener noreferrer"
+            >
+              <Facebook className="w-6 h-6 text-white group-hover:text-white transition-colors duration-300" />
+            </a>
+            <a
+              href="https://www.instagram.com/bictda/#"
+              className="backdrop-blur-xl bg-white/10 border border-bictda-accent/20 rounded-full shadow-lg flex items-center justify-center w-12 h-12 transition-all duration-300 hover:scale-110 hover:shadow-[0_0_16px_4px_rgba(34,197,94,0.25)] group"
+              style={{ WebkitBackdropFilter: 'blur(8px)' }}
+              aria-label="Instagram"
+              target="_blank" rel="noopener noreferrer"
+            >
+              <Instagram className="w-6 h-6 text-white group-hover:text-white transition-colors duration-300" />
+            </a>
+            <a
+              href="https://x.com/bictda_borno"
+              className="backdrop-blur-xl bg-white/10 border border-bictda-accent/20 rounded-full shadow-lg flex items-center justify-center w-12 h-12 transition-all duration-300 hover:scale-110 hover:shadow-[0_0_16px_4px_rgba(34,197,94,0.25)] group"
+              style={{ WebkitBackdropFilter: 'blur(8px)' }}
+              aria-label="X"
+              target="_blank" rel="noopener noreferrer"
+            >
+              <Twitter className="w-6 h-6 text-white group-hover:text-white transition-colors duration-300" />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/bictda"
+              className="backdrop-blur-xl bg-white/10 border border-bictda-accent/20 rounded-full shadow-lg flex items-center justify-center w-12 h-12 transition-all duration-300 hover:scale-110 hover:shadow-[0_0_16px_4px_rgba(34,197,94,0.25)] group"
+              style={{ WebkitBackdropFilter: 'blur(8px)' }}
+              aria-label="LinkedIn"
+              target="_blank" rel="noopener noreferrer"
+            >
+              <Linkedin className="w-6 h-6 text-white group-hover:text-white transition-colors duration-300" />
+            </a>
           </div>
         </div>
       </div>
