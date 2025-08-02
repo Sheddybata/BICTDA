@@ -612,7 +612,7 @@ const LatestNews: React.FC = () => {
                 {post.image && (
                   <img src={post.image} alt={post.title || 'News'} className="w-full h-64 object-cover rounded-t-2xl mb-0" />
                 )}
-                <div className="p-6">
+                <div className="p-6 max-h-[70vh] overflow-y-auto">
                   <DialogHeader className="mb-2">
                     <Badge variant="info" className="mb-2 w-fit bg-bictda-accent/10 text-bictda-accent font-semibold px-3 py-1 rounded-full text-xs shadow-none">{post.date}</Badge>
                     <DialogTitle className="text-2xl font-bold text-bictda-dark mb-2 leading-tight">{post.title}</DialogTitle>
